@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -38,6 +39,10 @@ int main(){
 	cout<<"total sigmax^2"<<sigmax2<<endl;
 	cout<<"total sigma y^2"<<sigmay2<<endl;
 	
+	float penyebut1 =sqrt(sigmax2-(sigmax*sigmax));
+	float penyebut2 =sqrt(sigmay2-(sigmay*sigmay));
+	r=penyebut1/penyebut2;
+	
 	if (r<0.09)
  {
  cout << "Hubungan korelasi diabaikan"; cin >> korelasi;
@@ -61,6 +66,9 @@ int main(){
 }
 	 
  
+
+
+
 
 
 
